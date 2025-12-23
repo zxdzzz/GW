@@ -2,15 +2,6 @@
 # yarn lockfile v1
 
 
-"@achrinza/node-ipc@^9.2.5":
-  "integrity" "sha512-ULSIYPy4ZPM301dfCxRz0l2GJjOwIo/PqmWonIu1bLml7UmnVQmH+juJcoyXp6E8gIRRNAjGYftJnNQlfy4vPg=="
-  "resolved" "https://registry.npmmirror.com/@achrinza/node-ipc/-/node-ipc-9.2.6.tgz"
-  "version" "9.2.6"
-  dependencies:
-    "@node-ipc/js-queue" "2.0.3"
-    "event-pubsub" "4.3.0"
-    "js-message" "1.0.7"
-
 "@ampproject/remapping@^2.2.0":
   "integrity" "sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg=="
   "resolved" "https://registry.npmmirror.com/@ampproject/remapping/-/remapping-2.2.1.tgz"
@@ -1540,7 +1531,6 @@
   "resolved" "https://registry.npmmirror.com/@vue/cli-shared-utils/-/cli-shared-utils-5.0.8.tgz"
   "version" "5.0.8"
   dependencies:
-    "@achrinza/node-ipc" "^9.2.5"
     "chalk" "^4.1.2"
     "execa" "^1.0.0"
     "joi" "^17.4.0"
