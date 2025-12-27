@@ -4,7 +4,7 @@
             <!-- <div class="logo">
                 <img style="width: 37vw;" src="../assets/icon/topLogo.png" alt="Logo">
             </div> -->
-            <div class="changeLanguage">
+            <div :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="changeLanguage">
                 <el-dropdown @command="handleLanguageChange">
                     <span class="el-dropdown-link">
                         Language/语言<i class="el-icon-arrow-down el-icon--right"></i>
@@ -18,8 +18,9 @@
         </div>
         <div style="margin-top: 4vw;" class="module1">
             <img style="border-radius: 0;" src="../assets/headPage/banner-1.jpg" alt="">
-            <div class="module1_text fontSize1">
+            <div style="flex-direction: column;" class="module1_text fontSize1">
                 <img style="width: 70%;border-radius: 0;" src="../assets/icon/topLogo.png" alt="">
+                <div style="color: rgb(12,62,118);font-size: 5vw;margin-top: 10px;">凯戎生物</div>
             </div>
         </div>
         <div class="body padding">
@@ -31,20 +32,29 @@
                 </div>
             </div>
             <div class="module2 fontSize2 lh17">
-                <div style="font-size: 3.5vw;" class="module2_title fontWeight">关于 Aicogen</div>
-                <div style="text-align: center;font-size: 2.9vw;">Aicogen Limited是一家临床前阶段免疫学公司，致力于开发尖端</div>
-                <div style="text-align: center;font-size: 2.9vw;">RNA技术，对免疫细胞进行编程，以对抗自身免疫疾病，肿瘤和其他</div>
-                <div style="text-align: center;font-size: 2.9vw;">致命疾病。</div>
+                <div :style="{ fontSize: 3.5 / (magnification / 16) + 'vw' }"
+                    style="font-size: 3.5vw;text-align-last: left;" class="module2_title fontWeight">关于 Aicogen</div>
+                <div :style="{ fontSize: 2.8 / (magnification / 16) + 'vw' }"
+                    style="text-align: left;font-size: 2.8vw;"><br>Aicogen
+                    Limited是一家处于临床前阶段生物创新科技企业。致力于开发前沿RNA技术，通过对免疫细胞进行工程化重编程，以攻克自身免疫性疾病、肿瘤及其他严重威胁生命的疾病。</div>
+                <div :style="{ fontSize: 2.8 / (magnification / 16) + 'vw' }"
+                    style="text-align: left;font-size: 2.8vw;">
+                    <br>公司已发现多种具有差异化特征的分子，有望成为自身免疫和肿瘤适应症的"同类首创"(first-in-class)和"同类最佳" (best-in-class)疗法。
+                </div>
             </div>
             <div class="module3 fontSize2">
                 <div class="module3_topBox">
-                    <div class="module3_topBox_one">
+                    <div :style="{ height: (magnification / 16) > 1.2 ? '19.5vh' : '17.1vh' }"
+                        class="module3_topBox_one">
                         <img class="icon" src="../assets/icon/iconTeam.png" alt="">
-                        <div class="module3_text">中美双研发中心布局</div>
+                        <div :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="module3_text">全球化研发布局</div>
                     </div>
-                    <div class="module3_topBox_two">
+                    <div :style="{ height: (magnification / 16) > 1.2 ? '19.5vh' : '17.1vh' }"
+                        class="module3_topBox_two">
                         <img class="icon" src="../assets/icon/iconpipeline.png" alt="">
-                        <div class="module3_text">多项FIC/BIC管线
+                        <div :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="module3_text">
+                            拥有多项有潜力成为<br>同类首创新药（FIC）与
+                            <br>同类最优（BIC）的研发项目
                         </div>
                     </div>
                 </div>
@@ -69,13 +79,16 @@
             <div class="module5">
                 <img src="../assets/mobile/mobile4.jpg" alt="">
                 <div class="module5_text" style="font-size: 2.2vw;">
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">aBody</span>蛋白质序列优化
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }"
+                            class="fontWeight">aBody</span>蛋白质序列优化平台
                     </div>
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">xMRNA</span>mRNA序列优化</div>
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">xLNP</span>细胞特异性体内递送</div>
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }"
+                            class="fontWeight">xMRNA</span>mRNA序列优化平台</div>
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }"
+                            class="fontWeight">xLNP</span>靶向器官和细胞的体内递送平台</div>
                     <!-- <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
                             class="fontWeight">aBody</span>Protein
                         optimization</div> -->
@@ -85,46 +98,48 @@
                 <img src="../assets/headPage/backgroundpipeline.jpg" alt="">
                 <div style="font-size: 2.8vw;" class="module6_text fontSize2 lh17">
                     <div style="margin-top: 7vw;">
-                        <img style="width: 4vw;" src="../assets/icon/iconpipeline2.png" alt="">
+                        <img style="width: 4vw;border-radius: 0;" src="../assets/icon/iconpipeline2.png" alt="">
                         <span class="fontWeight" style="margin-left: 2vw;">管线</span>
                     </div>
-                    <div style="display: flex;margin-top: 3.4vh;padding-left: 6vw;">
-                        <div style="font-weight: 600;">ACG-102- </div>
-                        <div style="display: flex;align-items: center;">mRNA 编码的工程化 B
-                            细胞靶向治疗，<br>用于自身免疫性疾病。
+                    <div :style="{ fontSize: 2.8 / (magnification / 16) + 'vw' }" style="height: 95%;overflow-y: auto;">
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.2%;text-size-adjust: 100% !important;">
+                                ACG-102</div>
+                            <div style="width: 80%;">体内mRNA编码的B 细胞靶向疗法，用于自身免疫性疾病。</div>
                         </div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;padding-left: 6vw;">
-                        <div style="font-weight: 600;">ACG-202- </div>
-                        <div style="display: flex;align-items: center;">mRNA
-                            编码的工程化多特异性靶向治疗，<br>用于血液系统恶性肿瘤。
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-201</div>
+                            <div style="width: 80%;">mRNA体内mRNA编码的多特异性靶向疗法，用于血液系统恶性肿瘤。</div>
                         </div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;padding-left: 6vw;">
-                        <div style="font-weight: 600;">ACG-302- </div>
-                        <div style="display: flex;align-items: center;">mRNA 编码的工程化多特异性靶向治疗，<br>用于实体瘤。
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-301</div>
+                            <div style="width: 80%;">体内mRNA编码的多特异性靶向疗法，用于治疗实体瘤。</div>
                         </div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;padding-left: 6vw;">
-                        <div style="font-weight: 600;">ACG-402- </div>
-                        <div style="display: flex;align-items: center;">mRNA
-                            编码的工程化多特异性靶向治疗，<br>用于炎症及纤维化疾病。
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-401</div>
+                            <div style="width: 80%;">mRNA体内mRNA编码的多特异性靶向疗法，用于治疗炎症及纤维化疾病。
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="module4">
                 <img src="../assets/mobile/mobile5.jpg" alt="">
-                <div class="module4_text lh17">
-                    <div class="fontSize1">团队</div>
-                    <div class="lh17" style="margin-top: 1vh;font-size: 2.8vw;">
-                        国际化顶尖团队，涵盖LNP-mRNA
-                        科学家、资深<br>
-                        AI工程师及国际制药高管。
+                <div :style="{ fontSize: 2.5 / (magnification / 16) + 'vw' }" class="module4_text lh17">
+                    <div style="margin-top: 8%;" :style="{ fontSize: 5.5 / (magnification / 16) + 'vw' }"
+                        class="fontSize1">团队</div>
+                    <div class="lh17" style="margin-top: 1vh;font-size: 2.8vw;width: 75%;">
+                        国际化顶尖的科研与管理团队成员包括LNP-mRNA
+                        领域的资深专家、经验丰富的AI工程师，以及来国际知名大药企的高管。
                     </div>
-                    <div style="margin-top: 2vh;" class="fontSize1">战略合作</div>
-                    <div class="lh17" style="margin-top: 1vh;font-size: 2.8vw;">
-                        与顶级 CRO与大学建立战略合作。
+                    <div style="margin-top: 2vh;" :style="{ fontSize: 5.5 / (magnification / 16) + 'vw' }"
+                        class="fontSize1">战略合作</div>
+                    <div class="lh17" style="margin-top: 1vh;font-size: 2.8vw;width: 75%;">
+                        与全球领先的CRO机构以及知名高校建立了深度战略合作伙伴关系。
                     </div>
                 </div>
             </div>
@@ -148,10 +163,34 @@
 export default {
     data() {
         return {
-            module1_text: ''
+            module1_text: '',
+            magnification: 16,
         }
     },
+    mounted() {
+        setTimeout(() => {
+            this.magnification = this.isWeChatFontEnlargedAndroid();
+        }, 100);
+    },
     methods: {
+        isWeChatFontEnlargedAndroid() {
+            // 步骤1：创建一个隐藏的测试元素（用于检测字体渲染尺寸）
+            const testElement = document.createElement('div');
+            testElement.style.position = 'absolute';
+            testElement.style.visibility = 'hidden';
+            testElement.style.fontSize = '16px'; // 固定原始字体大小
+            testElement.style.width = 'auto';
+            testElement.style.height = 'auto';
+            testElement.innerText = '测试文本';
+            document.body.appendChild(testElement);
+
+            // 步骤2：获取实际渲染的字体大小（微信放大后会大于16px）
+            const computedFontSize = parseFloat(window.getComputedStyle(testElement).fontSize);
+            document.body.removeChild(testElement); // 移除测试元素
+
+            // 步骤3：判断渲染字体是否大于原始值（阈值可根据需求调整）
+            return computedFontSize; // 留少量误差空间，避免精度问题
+        },
         changeLanguage() {
             this.$router.push('/cn');
         },
@@ -309,7 +348,7 @@ export default {
     border-radius: 3vw;
     background-color: #74c0fc;
     /* padding-top: 3.5vh; */
-    justify-content: center;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,7 +360,7 @@ export default {
     border-radius: 3vw;
     background-color: #74c0fc;
     /* padding-top: 3.5vh; */
-    justify-content: center;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -23,6 +23,10 @@ let routes = [
       { path: '/cn', component: websiteHomecn },
     ],
   },
+  {
+    path: '/cn',
+    component: websiteHomecn,
+  },
 ]
 if ((availWidth / availHeight) < 1) {
   routes = [

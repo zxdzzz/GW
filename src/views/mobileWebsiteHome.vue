@@ -4,7 +4,7 @@
             <!-- <div class="logo">
                 <img style="width: 37vw;" src="../assets/icon/topLogo.png" alt="Logo">
             </div> -->
-            <div class="changeLanguage">
+            <div :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="changeLanguage">
                 <el-dropdown @command="handleLanguageChange">
                     <span class="el-dropdown-link">
                         Language/语言<i class="el-icon-arrow-down el-icon--right"></i>
@@ -25,40 +25,33 @@
         <div class="body padding">
             <div class="module1">
                 <img src="../assets/mobile/mobile1.jpg" alt="">
-                <div style="flex-direction: column;font-size: 5vw;" class="module1_text">
+                <div style="flex-direction: column;font-size: 5vw;"
+                    :style="{ fontSize: 5 / (magnification / 16) + 'vw' }" class="module1_text">
                     NEXT-GENERATION<br>IMMUNOTHERAPIES<br>
-                    <span style="margin-top: 4vw;font-size: 3.3vw;">Restoring and Resetting the
-                        balanceof the<br>human immune system</span>
+                    <span style="margin-top: 4vw;font-size: 3.3vw;"
+                        :style="{ fontSize: 3.3 / (magnification / 16) + 'vw' }">Restoring and resetting the
+                        balance of the<br>human immune system</span>
                 </div>
             </div>
             <div class="module2 fontSize2 lh17">
-                <div style="font-size: 3.5vw;" class="module2_title fontWeight">About Aicogen</div>
-                <div style="text-align: left;font-size: 2.9vw;">Aicogen Limited is a preclinical-stage immunology
-                    company
+                <div style="font-size: 3.5vw;text-align-last: left;" class="module2_title fontWeight">About Aicogen
                 </div>
-                <div style="text-align: left;font-size: 2.9vw;">dedicated to developing cutting-edge RNA technologies
-                    that
+                <div style="text-align: left;font-size: 2.9vw;"><br>Aicogen Limited is a preclinical-stage immunology
+                    company dedicated to developing cutting-edge RNA technologies that program immune cells to combat
+                    autoimmune diseases, cancer, and other life-threatening conditions.<br><br>The company has
+                    discovered multiple molecules with differentiated characteristics, positioned to become
+                    "first-in-class" and "best-in-class" therapies for autoimmune and oncology indications.
                 </div>
-                <div style="text-align: left;font-size: 2.9vw;">program immune cells to combat autoimmune
-                    diseases,cancer,
-                </div>
-                <div style="text-align: left;font-size: 2.9vw;">and other life-threatening conditions.The company has
-                </div>
-                <div style="text-align: left;font-size: 2.9vw;">discovered multiple molecules with differentiated
-                    characteristics,</div>
-                <div style="text-align: left;font-size: 2.9vw;">positioned to become "first-in-class"and "best-in-class"
-                </div>
-                <div style="text-align: left;font-size: 2.9vw;">therapies for autoimmune and oncology indications.</div>
             </div>
             <div class="module3 fontSize2">
                 <div class="module3_topBox">
                     <div class="module3_topBox_one">
                         <img class="icon" src="../assets/icon/iconTeam.png" alt="">
-                        <div class="module3_text">Global team</div>
+                        <div class="module3_text">Global Team</div>
                     </div>
                     <div class="module3_topBox_two">
                         <img class="icon" src="../assets/icon/iconpipeline.png" alt="">
-                        <div class="module3_text">Multiple FIC/BIC<br>pipelines
+                        <div class="module3_text">Multiple FIC/BIC<br>Pipelines
                         </div>
                     </div>
                 </div>
@@ -77,20 +70,24 @@
             <div class="module4">
                 <img src="../assets/mobile/mobile3.jpg" alt="">
                 <div class="module4_text fontSize2 lh17">
-                    <div class="fontSize6">TECHNOLOGY PLATFORMS</div>
+                    <div :style="{ fontSize: 4.5 / (magnification / 16) + 'vw' }" class="fontSize6">TECHNOLOGY PLATFORMS
+                    </div>
                 </div>
             </div>
             <div class="module5">
                 <img src="../assets/mobile/mobile4.jpg" alt="">
-                <div class="module5_text" style="font-size: 2.2vw;">
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">aBody</span>Protein
+                <div class="module5_text" :style="{ fontSize: 2.2 / (magnification / 16) + 'vw' }">
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }"
+                            class="fontWeight">aBody</span>protein
                         optimization
                     </div>
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">xMRNA</span>mRNA optimization</div>
-                    <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
-                            class="fontWeight">xLNP</span>cell specific invivo delivery</div>
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="fontWeight">xMRNA</span>mRNA
+                        optimization</div>
+                    <div style="flex-direction: column;" class="height25"><span
+                            :style="{ fontSize: 3 / (magnification / 16) + 'vw' }" class="fontWeight">xLNP</span>cell
+                        specific invivo delivery</div>
                     <!-- <div style="flex-direction: column;" class="height25"><span style="font-size: 3vw;"
                             class="fontWeight">aBody</span>Protein
                         optimization</div> -->
@@ -100,38 +97,48 @@
                 <img src="../assets/headPage/backgroundpipeline.jpg" alt="">
                 <div style="font-size: 2.8vw;" class="module6_text fontSize2 lh17">
                     <div style="margin-top: 7vw;">
-                        <img style="width: 4vw;" src="../assets/icon/iconpipeline2.png" alt="">
+                        <img style="width: 4vw;border-radius: 0;" src="../assets/icon/iconpipeline2.png" alt="">
                         <span class="fontWeight" style="margin-left: 2vw;">Pipelines</span>
                     </div>
-                    <div style="display: flex;margin-top: 3.4vh;">
-                        <div style="font-weight: 600;">ACG-102- </div>
-                        <div>Targeted mRNA immune therapy for<br>autoimmune diseases.</div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;">
-                        <div style="font-weight: 600;">ACG-202- </div>
-                        <div>Multi-targeted mRNA immune therapy for<br>hematologic cancers.</div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;">
-                        <div style="font-weight: 600;">ACG-302- </div>
-                        <div>Multi-specific mRNA immune therapeutics<br>for solid tumors.</div>
-                    </div>
-                    <div style="display: flex;margin-top: 3.4vh;">
-                        <div style="font-weight: 600;">ACG-402- </div>
-                        <div>Multi-specific mRNA immune therapeutics for<br>inflammatory and fibrotic diseases.</div>
+                    <div :style="{ fontSize: 2.8 / (magnification / 16) + 'vw' }" style="height: 95%;overflow-y: auto;">
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.2%;text-size-adjust: 100% !important;">
+                                ACG-102</div>
+                            <div style="width: 80%;">Targeted mRNA immune therapy for autoimmune diseases.</div>
+                        </div>
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-201</div>
+                            <div style="width: 80%;">Multi-targeted mRNA immune therapy for hematologic cancers.</div>
+                        </div>
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-301</div>
+                            <div style="width: 80%;">Multi-specific mRNA immune therapeutics for solid tumors.</div>
+                        </div>
+                        <div style="display: flex;margin-top: 2vh;">
+                            <div :style="{ width: (magnification / 16) > 1.1 ? '22%' : '18%' }"
+                                style="font-weight: 600;width: 18%;padding-top: 0.3%;">ACG-401</div>
+                            <div style="width: 80%;">Multi-specific mRNA immune therapeutics for inflammatory and
+                                fibrotic diseases.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="module4">
                 <img src="../assets/mobile/mobile5.jpg" alt="">
-                <div class="module4_text fontSize2 lh17">
-                    <div class="fontSize1">TEAM</div>
-                    <div class="lh17" style="margin-top: 1vh;">
+                <div :style="{ fontSize: 2.5 / (magnification / 16) + 'vw' }" class="module4_text fontSize2 lh17">
+                    <div :style="{ fontSize: 5.5 / (magnification / 16) + 'vw' }" class="fontSize1">TEAM</div>
+                    <div class="lh17">
                         International top-tier scientific & executive team<br>with global LNP-mRNA expertis, senior
                         Al<br>
                         engineers, and experienced pharma leaders.
                     </div>
-                    <div style="margin-top: 2vh;" class="fontSize1">PARTNERS</div>
-                    <div class="lh17" style="margin-top: 1vh;">
+                    <div style="margin-top: 2vh;" :style="{ fontSize: 5.5 / (magnification / 16) + 'vw' }"
+                        class="fontSize1">PARTNERS</div>
+                    <div class="lh17">
                         Strategic collaborations with leading CROs and<br>universities.
                     </div>
                 </div>
@@ -156,10 +163,32 @@
 export default {
     data() {
         return {
-            module1_text: ''
+            module1_text: '',
+            magnification: 16,
         }
     },
+    mounted() {
+        setTimeout(() => {
+            this.magnification = this.isWeChatFontEnlargedAndroid();
+        }, 100);
+    },
     methods: {
+        isWeChatFontEnlargedAndroid() {
+            //创建一个隐藏的测试元素（用于检测字体渲染尺寸）
+            const testElement = document.createElement('div');
+            testElement.style.position = 'absolute';
+            testElement.style.visibility = 'hidden';
+            testElement.style.fontSize = '16px'; // 固定原始字体大小
+            testElement.style.width = 'auto';
+            testElement.style.height = 'auto';
+            testElement.innerText = '测试文本';
+            document.body.appendChild(testElement);
+            //获取实际渲染的字体大小（微信放大后会大于16px）
+            const computedFontSize = parseFloat(window.getComputedStyle(testElement).fontSize);
+            document.body.removeChild(testElement); // 移除测试元素
+            //判断渲染字体是否大于原始值（阈值可根据需求调整）
+            return computedFontSize; // 留少量误差空间，避免精度问题
+        },
         changeLanguage() {
             this.$router.push('/cn');
         },
@@ -221,12 +250,13 @@ export default {
     position: absolute;
     top: 0;
     color: #fff;
-    width: 90%;
-    height: 100%;
+    width: 94%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 7vw;
+    margin-left: 5%;
+    overflow-y: auto;
 }
 
 .module5_text {

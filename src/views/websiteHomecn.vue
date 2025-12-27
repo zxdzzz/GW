@@ -6,8 +6,9 @@
         <div style="position: relative" class="row">
           <img :src="DBAI1" alt="" width="100%" style="border-radius: 10px" />
           <div class="img1_wordOutBox"
-            style="position: absolute;top: 0%;left: 0%;color: rgb(255, 255, 255);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;">
+            style="position: absolute;top: 0%;left: 0%;color: rgb(255, 255, 255);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
             <img style="width: 30%;" src="../assets/icon/topLogo.png" alt="">
+            <div style="color: rgb(12,62,118);font-size: 2rem;margin-top: 10px;">凯戎生物</div>
           </div>
         </div>
       </div>
@@ -26,18 +27,20 @@
       <div style="padding-left: 10vw !important; padding-right: 10vw !important;" class="container Function">
         <h2 style="margin-top: 100px; margin-bottom: 80px;" class="title title1 success Aicogen"></h2>
         <h2 style="font-size: 2rem;text-align: center;font-weight: 700;" class="title1 success">关于 Aicogen</h2>
-        <h2 style="font-size: 1.4vw;text-align: center;" class="title1 success mb09rem">
-          Aicogen Limited 是一家临床前阶段免疫学公司，致力于开发尖端RNA技术，对免疫细胞进行</h2>
-        <h2 style="font-size: 1.4vw;text-align: center;margin-bottom: 60px;" class="title1 success mb2rem">
-          编程，以对抗自身免疫疾病，肿瘤和其他致命疾病。</h2>
+        <h2 style="margin-top:40px;font-size: 1.4vw;text-align: center;" class="title1 success mb09rem">
+          Aicogen Limited是一家处于临床前阶段生物创新科技企业。致力于开发前沿RNA技术，<br>通过对免疫细胞进行工程化重编程，以攻克自身免疫性疾病、肿瘤及其他严重威胁生命的疾病。</h2>
+        <h2 style="margin-top:30px;font-size: 1.4vw;text-align: center;margin-bottom: 60px;"
+          class="title1 success mb2rem">
+          公司已发现多种具有差异化特征的分子，有望成为自身免疫和肿瘤适应症的"同类首创"<br>(first-in-class)和"同类最佳" (best-in-class)疗法。</h2>
         <div class="part2_row">
           <div class="part2_card">
             <img style="width: 3vw;margin-top: 3vh;" src="../assets/icon/iconTeam.png" alt="">
-            <div style="margin: 2vh 2vh;">中美双研发中心布局</div>
+            <div style="margin: 2vh 2vh;">全球化研发布局</div>
           </div>
           <div class="part2_card">
             <img style="width: 3vw;margin-top: 3vh;" src="../assets/icon/iconpipeline.png" alt="">
-            <div style="margin: 2vh 2vh;">多项FIC/BIC管线</div>
+            <div style="margin: 2vh 2vh;text-align: center;">拥有多项有潜力成为同类首创新药（FIC）<br>与同类最优（BIC）的研发项目
+            </div>
           </div>
         </div>
       </div>
@@ -86,7 +89,7 @@
                     <div class="section1_text" style="font-weight: 700;font-size: 2vw;width: 27vw;">
                       aBody
                       <div style="font-weight: 400;font-size: 1.5vw;">
-                        蛋白质序列优化
+                        蛋白质序列优化平台
                       </div>
                     </div>
                   </div>
@@ -94,7 +97,7 @@
                     <div class="section1_text" style="font-weight: 700;font-size: 2vw;width: 27vw;">
                       xMRNA
                       <div style="font-weight: 400;font-size: 1.5vw;">
-                        mRNA序列优化
+                        mRNA序列优化平台
                       </div>
                     </div>
                   </div>
@@ -102,7 +105,7 @@
                     <div class="section1_text" style="font-weight: 700;font-size: 2vw;width: 27vw;">
                       xLNP
                       <div style="font-weight: 400;font-size: 1.5vw;">
-                        细胞特异性体内递送
+                        靶向器官和细胞的体内递送平台
                       </div>
                     </div>
                   </div>
@@ -118,20 +121,20 @@
                     <span style="margin-left: 1vw;font-size: 2vw;">管线</span>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-102 </div>
-                    <div style="font-weight: 300;">-mRNA 编码的工程化 B 细胞靶向治疗，用于自身免疫性疾病。</div>
+                    <div style="font-weight: 600;">ACG-102</div>
+                    <div style="font-weight: 300;">&ensp;体内mRNA编码的B 细胞靶向治疗，用于自身免疫性疾病。</div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-202 </div>
-                    <div style="font-weight: 300;">-mRNA 编码的工程化多特异性靶向治疗，用于血液系统恶性肿瘤。</div>
+                    <div style="font-weight: 600;">ACG-201 </div>
+                    <div style="font-weight: 300;">&ensp;体内mRNA编码的多特异性靶向疗法，用于治疗血液系统恶性肿瘤。</div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-302 </div>
-                    <div style="font-weight: 300;">-mRNA 编码的工程化多特异性靶向治疗，用于实体瘤。</div>
+                    <div style="font-weight: 600;">ACG-301 </div>
+                    <div style="font-weight: 300;">&ensp;体内mRNA编码的多特异性靶向疗法，用于治疗实体瘤。</div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-402 </div>
-                    <div style="font-weight: 300;">-mRNA 编码的工程化多特异性靶向治疗，用于炎症及纤维化疾病。</div>
+                    <div style="font-weight: 600;">ACG-401 </div>
+                    <div style="font-weight: 300;">&ensp;体内mRNA编码的多特异性靶向疗法，用于治疗炎症及纤维化疾病。</div>
                   </div>
                 </div>
               </div>
@@ -140,13 +143,13 @@
                 <div
                   style="position: absolute;color: #fff;top: 0%;left: 0%;width: 100%;height: 100%;display: flex;justify-content: center;">
                   <div style="text-align: center;" class="team_word">
-                    <div style="font-size: 2.5vw;margin-top: 12%;">团队</div>
-                    <div class="lh17" style="margin-top: 1vh;font-size: 1.8vw;font-weight: 300;">国际化顶尖团队，涵盖LNP-mRNA
-                      科学家、资深
-                      AI工程师及国际制药高管。</div>
-                    <div style="margin-top: 6vh;font-size: 2.5vw;margin-top: 12%;">战略合作</div>
+                    <div style="font-size: 2.5vw;margin-top: 10%;">团队</div>
+                    <div class="lh17" style="margin-top: 2vh;font-size: 1.8vw;font-weight: 300;">
+                      国际化顶尖的科研与管理团队成员包括LNP-mRNA
+                      领域的资深专家、经验丰富的<br>AI工程师，以及来国际知名大药企的高管。</div>
+                    <div style="margin-top: 6vh;font-size: 2.5vw;margin-top: 6%;">战略合作</div>
                     <div class="lh17" style="margin-top: 1vh;font-size: 1.8vw;font-weight: 300;">
-                      与顶级 CRO与大学建立战略合作。
+                      与全球领先的CRO机构以及知名高校建立了深度战略合作伙伴关系。
                     </div>
                   </div>
                 </div>
@@ -1477,8 +1480,9 @@ export default {
   border-radius: 1vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-size: 1.5vw;
+  justify-content: start;
+  padding-top: 2%;
+  font-size: 1.3vw;
   align-items: center;
 }
 

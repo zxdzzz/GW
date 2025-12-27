@@ -35,13 +35,13 @@
                 <div style="display: flex;align-items: center;" href="#">
                   <div @click="changeL('CN')" style="display: flex;justify-content: center;align-items: center;">
                     <img style="width: 1.5rem;margin-top: 2px;" src="../assets/icon/CN.png" alt="">
-                    <span style="width: 5rem;height: 100%;">中文简体</span>
+                    <span style="width: 5rem;height: max-content;padding-right: 10px;">中文简体</span>
                   </div>
                   <div style="height: 15px;border-left: 1px solid #000;"></div>
                   <div @click="changeL('EN')"
-                    style="display: flex;justify-content: center;align-items: center;margin-left: 0.5vw;">
+                    style="display: flex;justify-content: center;align-items: center;margin-left: 14px;">
                     <img style="width: 1.5rem;margin-top: 2px;" src="../assets/icon/EN.png" alt="">
-                    <span style="width: 5rem;height: 100%;">English</span>
+                    <span style="width: 5rem;height: max-content;">English</span>
                   </div>
                 </div>
                 <!-- <div href="#">{{ L == 'EN' ? 'CN' : 'EN' }}</div> -->
@@ -98,7 +98,7 @@ export default {
         'CN': '关于我们'
       },
       navbar2: {
-        EN: 'Technical Platform',
+        EN: 'Technical Platforms',
         CN: '技术平台'
       },
       navbar3: {
@@ -363,7 +363,7 @@ footer img {
 
 @media screen and (orientation: landscape) {
   .navbar_img {
-    height: 20px;
+    height: 30px;
     margin-bottom: 6px;
   }
 

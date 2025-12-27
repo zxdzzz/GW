@@ -17,7 +17,7 @@
           <div class="img1_wordOutBox"
             style="font-size: 2rem;font-weight: 700;position: absolute;top: 0%;left: 0%;color: rgb(255, 255, 255);width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;flex-direction: column;color: #000;text-align: center;">
             Next-Generation<br>Immunotherapies
-            <div style="font-size: 1.5rem;font-weight: 400;margin-top: 4vh;">Restoring and Resetting the<br>balanceof
+            <div style="font-size: 1.5rem;font-weight: 400;margin-top: 4vh;">Restoring and resetting the<br>balance of
               the human immune
               system</div>
           </div>
@@ -37,17 +37,17 @@
         <h2 style="font-size: 1.5vw;text-align: left;" class="title1 success mb2rem">
           The company has discovered multiple molecules with differentiated characteristics,</h2>
         <h2 style="font-size: 1.5vw;text-align: left;" class="title1 success mb2rem">
-          positioned to become "first-in-class"and "best-in-class"therapies for</h2>
+          positioned to become "first-in-class" and "best-in-class"therapies for</h2>
         <h2 style="font-size: 1.5vw;text-align: left;margin-bottom: 60px;" class="title1 success mb2rem">
           autoimmune and oncology indications.</h2>
         <div class="part2_row">
           <div class="part2_card">
             <img style="width: 3vw;margin-bottom: 1vh;" src="../assets/icon/iconTeam.png" alt="">
-            <div style="margin: 0 2vh;">Global team</div>
+            <div style="margin: 0 2vh;">Global Team</div>
           </div>
           <div class="part2_card">
             <img style="width: 3vw;margin-bottom: 1vh;" src="../assets/icon/iconpipeline.png" alt="">
-            <div style="margin: 0 2vh;">Multiple FIC/BIC pipelines</div>
+            <div style="margin: 0 2vh;">Multiple FIC/BIC Pipelines</div>
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
                     <div class="section1_text" style="font-weight: 700;font-size: 2vw;width: 27vw;">
                       aBody
                       <div style="font-weight: 400;font-size: 1.5vw;">
-                        Protein optimization
+                        protein optimization
                       </div>
                     </div>
                   </div>
@@ -128,21 +128,22 @@
                     <span style="margin-left: 1vw;font-size: 2vw;">Pipelines</span>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-102 </div>
-                    <div style="font-weight: 300;">-Targeted mRNA immune therapy for autoimmune diseases.</div>
+                    <div style="font-weight: 600;">ACG-102</div>
+                    <div style="font-weight: 300;">&ensp;Targeted mRNA immune therapy for autoimmune diseases.</div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-202 </div>
-                    <div style="font-weight: 300;">-Multi-targeted mRNA immune therapy for hematologic cancers.</div>
+                    <div style="font-weight: 600;">ACG-201 </div>
+                    <div style="font-weight: 300;">&ensp;Multi-targeted mRNA immune therapy for hematologic cancers.
+                    </div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-302 </div>
-                    <div style="font-weight: 300;">-Multi-specific mRNA immune therapeutics for solid tumors.</div>
+                    <div style="font-weight: 600;">ACG-301 </div>
+                    <div style="font-weight: 300;">&ensp;Multi-specific mRNA immune therapeutics for solid tumors.</div>
                   </div>
                   <div style="display: flex;margin-top: 7vh;margin-left: 15vw;">
-                    <div style="font-weight: 600;">ACG-402 </div>
-                    <div style="font-weight: 300;">-Multi-specific mRNA immune therapeutics forinflammatory and
-                      <br>fibrotic
+                    <div style="font-weight: 600;">ACG-401 </div>
+                    <div style="font-weight: 300;">&ensp;Multi-specific mRNA immune therapeutics forinflammatory and
+                      fibrotic
                       diseases.
                     </div>
                   </div>
